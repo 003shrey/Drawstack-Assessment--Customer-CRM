@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #0f172a;
+  background:
+    radial-gradient(circle at 90% 0%, rgba(34, 211, 238, .16), transparent 28rem),
+    linear-gradient(135deg, #f8fafc 0%, #eef6f7 100%);
+}
+
+h1, h2, h3, .font-black {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.field {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: .75rem;
+  background: #fff;
+  padding: .75rem .9rem;
+  outline: none;
+}
+
+.field:focus {
+  border-color: #0891b2;
+  box-shadow: 0 0 0 3px rgba(8, 145, 178, .12);
+}
+
+.label {
+  display: grid;
+  gap: .5rem;
+  color: #475569;
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.status {
+  display: inline-flex;
+  border-radius: 999px;
+  padding: .3rem .65rem;
+  font-size: .75rem;
+  font-weight: 700;
+}
+
+.status-open { background: #dbeafe; color: #1d4ed8; }
+.status-progress { background: #fef3c7; color: #a16207; }
+.status-closed { background: #dcfce7; color: #15803d; }

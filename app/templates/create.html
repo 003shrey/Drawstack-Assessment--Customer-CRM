@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create Ticket | Support Desk</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="min-h-screen">
+  <header class="border-b border-slate-200 bg-white/90">
+    <div class="mx-auto max-w-6xl px-5 py-5">
+      <a href="/" class="text-xl font-black text-slate-900">Support<span class="text-cyan-600">Desk</span></a>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-3xl px-5 py-10">
+    <a href="/" class="text-sm font-bold text-cyan-700">&larr; Back to tickets</a>
+    <h1 class="mt-5 text-4xl font-black text-slate-950">Create a ticket</h1>
+    <p class="mt-2 text-slate-500">Capture the issue clearly so your team can act quickly.</p>
+
+    <form id="create-form" class="mt-8 space-y-5 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <div class="grid gap-5 md:grid-cols-2">
+        <label class="label">Customer name<input name="customer_name" class="field" required minlength="2"></label>
+        <label class="label">Customer email<input name="customer_email" type="email" class="field" required></label>
+      </div>
+      <label class="label">Subject<input name="subject" class="field" required minlength="3"></label>
+      <label class="label">Description<textarea name="description" class="field min-h-40" required minlength="5"></textarea></label>
+      <p id="form-error" class="hidden rounded-xl bg-red-50 p-3 text-sm text-red-700"></p>
+      <button class="w-full rounded-xl bg-slate-900 px-5 py-3 font-bold text-white hover:bg-cyan-700">Create ticket</button>
+    </form>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ticket | Support Desk</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="min-h-screen">
+  <header class="border-b border-slate-200 bg-white/90">
+    <div class="mx-auto max-w-6xl px-5 py-5">
+      <a href="/" class="text-xl font-black text-slate-900">Support<span class="text-cyan-600">Desk</span></a>
+    </div>
+  </header>
+
+  <main id="detail" class="mx-auto max-w-4xl px-5 py-10">
+    <a href="/" class="text-sm font-bold text-cyan-700">&larr; Back to tickets</a>
+    <div id="ticket-content" class="mt-5"></div>
+  </main>
+
+  <script>
+    window.TICKET_ID = "{{ ticket_id }}";
+  </script>
+  <script src="/static/app.js"></script>
+</body>
+</html>
